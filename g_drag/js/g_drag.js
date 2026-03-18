@@ -40,7 +40,7 @@ function initGame() {
     const targetPos = slots[0];
 
     // 수업하기 좌표에 수업하기 버튼 생성
-    createButton('green-button', '수업하기', targetPos);
+    createButton('green-button', '수업한다', targetPos);
 
     // 수업 안 함 버튼 생성
     for (let i = 0; i < RED_BTN_COUNT; i++) {
