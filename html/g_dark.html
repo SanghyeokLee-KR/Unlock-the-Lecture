@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Layout Frame</title>
+    
+    <!-- 공통 스타일 선언 -->
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- 개별 스타일 선언 -->
+    <link rel="stylesheet" href="../g_dark/css/g_dark.css" />
+  </head>
+  <body>
+    <div id="root">
+      <header id="header">
+        <div class="logo">
+          <span>LOGO</span>
+        </div>
+        <div class="stage-info">
+          <!-- ! 스테이지 변경 필요 -->
+          <span id="stage-name">현재 스테이지: 1단계</span>
+        </div>
+      </header>
+
+      <!-- 버튼이 뿌려질 구역 -->
+      <main id="container">
+        <p id="dark-guide">어둠 속에서 수업한다 버튼을 찾으세요!</p>
+      </main>
+    </div>
+
+    <script src="../g_drag/js/g_drag.js" defer></script>
+  </body>
+</html>
