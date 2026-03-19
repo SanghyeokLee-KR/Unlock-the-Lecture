@@ -83,6 +83,7 @@ button.addEventListener("click", () => {
         resultDisplay.style.color = "#2f3542";
         if (winItem.name.includes("수업하기")) {
             resultDisplay.innerText = `수업들을께요....`;
+            button.innerText = "룰렛 돌리기"
         } else {
             resultDisplay.innerText = "🎉 축하합니다! 교수님 가방 싸세요! 저흰 먼저 집에 갑니다! 🎉";
             resultDisplay.style.color = "#ff4757";
