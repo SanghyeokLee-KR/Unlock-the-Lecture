@@ -2,6 +2,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.lineURL{
   background-image: url("../../asset/img/linegamecharacter.png");
 }
 #line-guide{
