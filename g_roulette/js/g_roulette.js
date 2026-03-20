@@ -4,7 +4,7 @@ const canvas = document.getElementById("rouletteCanvas");
 const ctx = canvas.getContext("2d");
 
 //룰렛 그리기 위한 재료
-const rawItems = ['수엽하기', '수업하기', '수업하가', '수엄하기', '수업해기', '수업허기'];
+const rawItems = ['수엽한다', '수업한다', '수업한다', '수엄한다', '수업한다', '수업한다'];
 const colors = ["#f8a5c2", "#f7d794", "#f3a683", "#786fa6", "#63cdda", "#546de5"];
 
 let items = []; 
@@ -60,7 +60,7 @@ button.addEventListener("click", () => {
     button.disabled = true;
     button.innerText = "두구두구두구...";
     resultDisplay.innerText = "교수님 오늘 수업 할 수 있을거라고 생각하세요?";
-
+    resultDisplay.style.color = "#2f3542";
     // 최소 10바퀴 이상 돌도록 설정
     const additionalRotate = Math.floor(Math.random() * 360) + 3600; 
     currentRotation += additionalRotate;
@@ -79,9 +79,7 @@ button.addEventListener("click", () => {
         const winItem = items.find(it => 
             targetRadian >= it.startAngle && targetRadian < it.endAngle
         );
-
-        resultDisplay.style.color = "#2f3542";
-        if (winItem.name.includes("수업하기")) {
+        if (winItem.name.includes("수업한다")) {
             resultDisplay.innerText = `수업들을께요....`;
             button.innerText = "룰렛 돌리기"
         } else {

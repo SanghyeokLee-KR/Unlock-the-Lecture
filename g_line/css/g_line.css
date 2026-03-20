@@ -1,71 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-body {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-x: auto;
-  background-image: url("../../asset/img/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-#root {
-  width: 1200px;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-#header {
-  width: 100%;
-  height: 80px;
-  border: 2px solid #333;
-  border-bottom: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 30px;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 50px;
-  margin-right: 10px;
-}
-
-#container {
-  width: 100%;
-  height: 800px;
-  border: 2px solid #333;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
+.background{
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
+}
+.lineURL{
   background-image: url("../../asset/img/linegamecharacter.png");
 }
 #line-guide{
   width: 100%;
-  padding: 14px 18px;
+  padding: 14px 16px;
   background-color: #2ecc71;
   color: #fff;
   font-size: 20px;
@@ -76,7 +19,6 @@ body {
 #startButton {
   position: absolute;
   left: 50%;
-  top : 85%;
   transform: translate(-50%,-50%);
   padding: 1.25rem 3rem; 
   font-size: 1.25rem;
@@ -92,6 +34,9 @@ body {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   margin-bottom: 40px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.top{
+  top : 85%;
 }
 
 #startButton::before {
@@ -110,12 +55,3 @@ body {
 #startButton:hover::before {
   opacity: 0.15;
 }
-
-/* .line{
-  border-top: 2px solid black;
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  top : 30%;
-  transform: translate(-50%,-50%);
-} */
