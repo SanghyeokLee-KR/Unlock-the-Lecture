@@ -20,15 +20,15 @@ export function initScroll(container, onNext) {
       }
 
       if (btn.type === 'fake') {
-        return `<button class="fake-btn" style="margin-top:${marginTop}vh">수업하기</button>`;
+        return `<button class="fake-btn" style="margin-top:${marginTop}vh">수업한다</button>`;
       } else {
-        return `<button id="next-btn" style="margin-top:${marginTop}vh">수업하기</button>`;
+        return `<button id="next-btn" style="margin-top:${marginTop}vh">수업한다</button>`;
       }
     })
     .join('');
 
   container.innerHTML = `
-  <p id="scroll-guide">스크롤을 내려 '진짜 수업하기 버튼'을 찾아주세요</p>
+  <p id="scroll-guide">스크롤을 내려 '진짜 수업한다 버튼'을 찾아주세요</p>
   <div id="scroll-container">
     <div id="scroll-content">
       ${buttonsHTML}

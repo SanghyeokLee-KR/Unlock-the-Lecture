@@ -9,14 +9,14 @@
   </head>
   <body>
     <div id="root">
-      <div id="header">
+      <header id="header">
         <div class="logo">
-          <span>LOGO</span>
+          <span>Unlock the Lecture</span>
         </div>
-        <div id="stage-info">
-          stage <span id="stage-num">1</span> : 진짜 버튼을 찾아라!
+        <div class="stage-info">
+          <span id="stage-name"></span>
         </div>
-      </div>
+      </header>
 
       <main id="container"></main>
     </div>
@@ -24,13 +24,8 @@
     <script type="module">
       import { initScroll } from '../g_scroll/js/g_scroll.js';
 
-      const stage =
-        Number(new URLSearchParams(location.search).get('stage')) || 1;
-      document.getElementById('stage-num').textContent = stage;
-
       initScroll(document.getElementById('container'), () => {
-        // 스테이지 순서 정해지면 다음 게임으로 이동 로직 추가
-        console.log('스크롤 클리어');
+        window.location.href = 'g_timer.html';
       });
     </script>
   </body>
