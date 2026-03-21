@@ -19,7 +19,7 @@
   text-align: center;
   position: absolute;
   top:0;
-  z-index: 9999;
+  z-index: 600;
 }
 
 /* 수업한다 버튼 */
