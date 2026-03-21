@@ -81,12 +81,12 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (rand < 0.3) {
       // 20% 확률 진짜 정답: 수업하기
       box.classList.add("box-green");
-      box.textContent = "수업하기";
+      box.textContent = "수업한다";
       box.dataset.type = "green";
     } else {
       if (gaugeValue >= 50) {
         box.classList.add("box-green"); // 초록색 적용
-        box.textContent = "수업하키"; // 텍스트 변경
+        box.textContent = "수업한타"; // 텍스트 변경
         box.dataset.type = "pink";
       } else {
         box.classList.add("box-pink"); // 50점 미만은 원래대로 핑크색
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
       box.style.left = position + "px";
 
       if (position > 1250) {
-        // '진짜 수업하기(green)'를 놓쳤을 때만 감점
+        // '진짜 수업하기'를 놓쳤을 때만 감점
         if (box.dataset.type === "green" && box.parentElement) {
           gaugeValue -= 15;
 
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
       beltItems.innerHTML = "";
 
       detectionZone.classList.add("completed");
-      detectionZone.textContent = "수업하기";
+      detectionZone.textContent = "수업한다";
       detectionZone.style.cursor = "pointer";
 
       detectionZone.onclick = () => {
