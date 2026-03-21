@@ -25,6 +25,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 80px; /*setting 버튼 겹침 방지용*/
 }
 
 #root {
@@ -38,7 +39,7 @@ body {
 
 #header {
   width: 100%;
-  height: 80px;
+  min-height: 80px; /*확대 시 글자 튀어나옴 방지*/
   /* border: 2px solid #333; */
   border-bottom: none;
   display: flex;
@@ -70,6 +71,7 @@ body {
   border-radius: 0px 0px 20px 20px;
   position: relative;
   overflow: hidden;
+
 }
 #stage-name{
   font-size: 20px;
