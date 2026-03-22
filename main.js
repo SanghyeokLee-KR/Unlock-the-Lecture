@@ -1,17 +1,17 @@
 const pageList = [
-  { id: 1, url: '/Unlock-the-Lecture/html/g_basic_screen.html' },
-  { id: 2, url: '/Unlock-the-Lecture/html/g_scroll.html' },
-  { id: 3, url: '/Unlock-the-Lecture/html/g_timer.html' },
-  { id: 4, url: '/Unlock-the-Lecture/html/g_rgb.html' },
-  { id: 5, url: '/Unlock-the-Lecture/html/g_drag.html' },
-  { id: 6, url: '/Unlock-the-Lecture/html/g_memory.html' },
-  { id: 7, url: '/Unlock-the-Lecture/html/g_line.html' },
-  { id: 8, url: '/Unlock-the-Lecture/html/g_roulette.html' },
-  { id: 9, url: '/Unlock-the-Lecture/html/g_maze.html' },
-  { id: 10, url: '/Unlock-the-Lecture/html/g_dark.html' },
-  { id: 11, url: '/Unlock-the-Lecture/html/g_photo.html' },
-  { id: 12, url: '/Unlock-the-Lecture/html/g_stairs.html' },
-  { id: 13, url: '/Unlock-the-Lecture/html/g_final_screen.html' },
+  { id: 1, url: 'g_basic_screen.html' },
+  { id: 2, url: 'g_scroll.html' },
+  { id: 3, url: 'g_timer.html' },
+  { id: 4, url: 'g_rgb.html' },
+  { id: 5, url: 'g_drag.html' },
+  { id: 6, url: 'g_memory.html' },
+  { id: 7, url: 'g_line.html' },
+  { id: 8, url: 'g_roulette.html' },
+  { id: 9, url: 'g_maze.html' },
+  { id: 10, url: 'g_dark.html' },
+  { id: 11, url: 'g_photo.html' },
+  { id: 12, url: 'g_stairs.html' },
+  { id: 13, url: 'g_final_screen.html' },
 ];
 
 // 헤더에 띄우는 스테이지 번호와 게임명
@@ -37,7 +37,7 @@ function replayThisStage() {
 function checkSaveLoadPage() {
   let stageNum = localStorage.getItem('key');
   if (stageNum === null) {
-    window.location.href = '/html/g_basic_screen.html';
+    window.location.href = 'html/g_basic_screen.html';
     return;
   }
   replayThisStage();
