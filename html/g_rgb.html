@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unlock the Lecture</title>
+    
+    <!-- 공통 스타일 선언 -->
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- reset 스타일 선언 -->
+    <link rel="stylesheet" href="../settings.css" />
+
+    <!-- 개별 스타일 선언 -->
+    <link rel="stylesheet" href="../g_rgb/css/g_rgb.css" />
+  </head>
+  <body>
+    <div id="root">
+      <header id="header">
+        <div class="logo">
+          <span>Unlock the Lecture</span>
+        </div>
+        <div class="stage-info">
+          <span id="stage-name"></span>
+        </div>
+      </header>
+
+      <!-- 설정 버튼 -->
+      <div id="settings-wrapper">
+        <div id="settings-btn" class="settings-icon">
+          <img src="../asset/img/settings-icon.png" alt="환경설정" />
+        </div>
+      </div>
+
+      <div id="settings-modal" class="modal-overlay" style="display: none">
+        <div class="modal-content">
+          <h2 class="modal-title">MENU</h2>
+          <div class="modal-buttons">
+            <button id="btn-restart-all" class="menu-btn">처음부터</button>
+            <button id="btn-restart-stage" class="menu-btn">다시시작</button>
+            <button id="btn-skip-stage" class="menu-btn">넘어가기</button>
+          </div>
+          <button id="btn-close-modal" class="close-btn">닫기</button>
+        </div>
+      </div>
+
+      <main id="container">
+        <p id="rgb-guide">수업한다 버튼과 '똑같은 색'을 맞추세요!</p>
+        <!-- 버튼 두개 구역 -->
+        <div id="button-wrap">
+          <!-- 버튼 하나 구역 (사용자)-->
+          <div class="color-box">
+            <button id="user-btn">수업 안 함</button>
+          </div>
+          <!-- 버튼 하나 구역 (기존)-->
+          <div class="color-box">
+            <button id="target-btn">수업한다</button>
+          </div>
+        </div>
+
+        <!-- rgb 입력 구역 -->
+        <div id="rgb-area">
+          <!-- 입력 하나 구역 (R) -->
+          <div class="input-group">
+            <label for="r-input" style="color: red;">R</label>
+            <input type="number" id="r-input" min="0" max="255" placeholder="0">
+          </div>
+          <!-- 입력 하나 구역 (g) -->
+          <div class="input-group">
+            <label for="g-input" style="color: green;">G</label>
+            <input type="number" id="g-input" min="0" max="255" placeholder="0">
+          </div>
+          <!-- 입력 하나 구역 (b) -->
+          <div class="input-group">
+            <label for="b-input" style="color: blue;">B</label>
+            <input type="number" id="b-input" min="0" max="255" placeholder="0">
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../main.js" defer></script>
+    <script src="../g_rgb/js/g_rgb.js" defer></script>
+    <script src="../settings.js" defer></script>
+  </body>
+</html>

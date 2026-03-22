@@ -1,34 +1,80 @@
+@font-face {
+  font-family: Jersey10-Regular;
+  src: url("/asset/fonts/Jersey10-Regular.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* 택스트 드래그 막는거 찾기 */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
   width: 100%;
   min-height: 100vh;
-  background-color: #ffffff;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: auto; /* 1200px보다 작아지면 스크롤 생성 */
+  overflow-x: auto;
+  background-color: black;
+  /* background-image: url("asset/img/background.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 80px; /*setting 버튼 겹침 방지용*/
 }
 
 #root {
   width: 1200px;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 0px 50px rgba(109, 109, 109, 0.705);
+  border-radius: 20px;
 }
 
-main {
-  border: 2px solid #333;
+#header {
   width: 100%;
+  min-height: 80px; /*확대 시 글자 튀어나옴 방지*/
+  /* border: 2px solid #333; */
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.logo {
+  font-size: 40px;
+  margin-left: 20px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  color: #22c55e; 
+  font-family: Jersey10-Regular, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
 }
 
 #container {
+  width: 100%;
   height: 800px;
+  /* border: 2px solid #333; */
+  border-radius: 0px 0px 20px 20px;
   position: relative;
-  color: black;
+  overflow: hidden;
+
+}
+#stage-name{
+  font-size: 20px;
+  font-weight: bold;
+  color:rgb(77, 74, 74)
 }
